@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f8f9;
+    color: #333;
+}
+
+
+.header {
+    background: linear-gradient(90deg, #00bfa5, #0097a7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logo h1 {
+    font-size: 26px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.logo span {
+    color: #ffe57f;
+}
+
+/* Навигация */
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #ffe57f;
+    color: #00897b;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 4px 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    color: #333;
+    width: 150px;
+    transition: width 0.3s ease;
+}
+
+.search-bar input:focus {
+    width: 200px;
+}
+
+.search-bar button {
+    border: none;
+    background: #00bfa5;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background: #009688;
+}
+/*  */

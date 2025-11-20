@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MAXI Travel — Контакты</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+  <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        
+        <img src="ChatGPT Image 10 нояб. 2025 г., 23_00_09.png" alt="MAXI Travel Logo">
+        <h1>MAXI <span>Travel</span></h1>
+      </div>
+
+      <nav class="navigation" aria-label="Главное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="catalog.html">Услуги</a></li>
+          <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <form class="search-bar" action="search.html" method="get" role="search">
+        <input type="text" name="q" placeholder="Поиск...">
+        <button type="submit" aria-label="Искать">🔍</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Hero (похож на скрин) -->
+  <section class="hero" aria-hidden="false">
+    <div class="hero-inner">
+      <h1>Добро пожаловать в <span class="teal">MAXI Travel</span></h1>
+      <p class="subtitle">Исследуй мир вместе с нами!</p>
+      <a class="btn" href="#contacts">Выбрать тур</a>
+    </div>
+  </section>
+
+  <!-- Блок с горячими турами (пример под геро) -->
+  <main>
+    <section class="intro">
+      <h2>Горящие туры и популярные направления</h2>
+      <p class="lead">Подбор туров по лучшим ценам — пляжи, горы, экскурсии.</p>
+    </section>
+
+    <!-- Секция: контакты — твой блок + карточка контактов -->
+    <section id="contacts" class="contacts-grid">
+      <!-- Левая часть: карта + форма (используем твой html) -->
+      <div class="left-column">
+        <div class="map">
+          <!-- Примечание: короткие ссылки maps.app могут не внедряться в iframe корректно.
+               Рекомендую заменить на embed-link из Google Maps (Share → Embed a map). -->
+          <iframe 
+            src="https://maps.app.goo.gl/juGVFh5kqzJc4VNC9" 
+            allowfullscreen="" 
+            loading="lazy"
+            title="Карта — MAXI Travel">
+          </iframe>
+        </div>
+
+        <div class="feedback">
+          <h2>Обратная связь</h2>
+          <form class="feedback-form" id="feedbackForm" novalidate>
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Правая часть: карточка контактов -->
+      <aside class="right-column contact-card" aria-labelledby="contactCardTitle">
+        <h3 id="contactCardTitle">Контакты MAXI Travel</h3>
+
+        <div class="info-row">
+          <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+          <div>
+            <div class="label">Адрес</div>
+            <div class="value">г. Алматы, ул. киси-киси-мяу-мяу, 123</div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <div>
+            <div class="label">Телефон</div>
+            <div class="value">+7 (***) ***-**-**<br>+7 (***) ***-**-** (WhatsApp)</div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <div>
+            <div class="label">E-mail</div>
+            <div class="value">info@maxitravel.example</div>
+          </div>
+        </div>
+
+        <div class="socials" aria-label="Социальные сети">
+          <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fa fa-telegram-plane"></i></a>
+        </div>
+
+        <div class="qr-block">
+          <div class="qr-image"><img src="https://via.placeholder.com/120x120.png?text=QR" alt="QR-код"></div>
+          <div class="qr-text">
+            <div class="label">QR для контакта</div>
+            <div class="value">Сканируйте — откроется чат или визитка.</div>
+          </div>
+        </div>
+
+        <div class="hours">
+          <div class="label">Режим работы</div>
+          <div class="value">Пн—Пт: 09:00—18:00 • Сб: 10:00—15:00 • Вс: выходной</div>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="tel:+74951234567">Позвонить сейчас</a>
+          <a class="btn ghost" href="mailto:info@maxitravel.example">Написать</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © MAXI Travel — Все права защищены.
+  </footer>
+
+  <script>
+    // Простейшая обработка формы (локально)
+    document.getElementById('feedbackForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      const message = this.message.value.trim();
+      if(!name || !email || !message){
+        alert('Пожалуйста, заполните обязательные поля: имя, email и сообщение.');
+        return;
+      }
+      // Здесь можно отправлять через fetch / Formspree / Netlify
+      alert('Спасибо! Ваше сообщение отправлено (пример).');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
